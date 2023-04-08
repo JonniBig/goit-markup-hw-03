@@ -12,21 +12,48 @@
   --white: #ffffff;
   --dairy: #fcfcfc;
 }
+/* body */
 body {
   font-family: Roboto, sans-serif;
   color: var(--slate);
   background-color: var(--white);
   letter-spacing: 0.02em;
 }
-/* decoration */
-.list {
-  list-style: none;
+.container {
+  width: 1158px;
+  align-content: center;
+  display: flex;
+}
+.section {
+  width: 1440px;
+}
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 .link {
+  color: currentColor;
   text-decoration: none;
   color: var(--navy-blue);
   letter-spacing: 0.02em;
 }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+/* reset end */
 
 /* logo */
 
@@ -41,12 +68,20 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-left: 156px;
 }
 
 .logo-dark {
   color: var(--navy-blue);
 }
 /* header */
+/* .header {
+  width: 1440px;
+} */
+.header-item {
+  display: flex;
+  align-items: center;
+}
 .header-link {
   font-weight: 500;
   font-size: 16px;
@@ -57,17 +92,34 @@ body {
 .header-link:focus {
   color: var(--ocean);
 }
+.site-nav {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  margin-left: 76px;
+  margin-right: 332px;
+}
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
   color: var(--slate);
+  letter-spacing: 0.02em;
+}
+.address-nav {
+  display: flex;
+  gap: 40px;
 }
 
 /* main studio*/
 .hero-section {
   background-color: var(--navy-blue);
+  height: 600px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 .main-title {
   font-weight: 700;
@@ -76,6 +128,11 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
+  width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 188px;
 }
 .order-srv {
   font-family: inherit;
@@ -83,9 +140,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
   color: var(--white);
   background-color: var(--iris);
   cursor: pointer;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .order-srv:hover,
