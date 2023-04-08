@@ -20,10 +20,10 @@
   </head>
   <body>
     <!--header section  -->
-    <header class="section">
-      <div class="header-item">
+    <header class="header">
+      <div class="container header-item">
         <nav class="header-item">
-          <a class="link logo logo-head" href="./index.html"
+          <a class="link logo" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
 
@@ -38,9 +38,7 @@
         <address class="address-link">
           <ul class="list address-nav">
             <li>
-              <a
-                class="link address-link"
-                href="mailto:info@devstudio.com"
+              <a class="link address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -57,53 +55,48 @@
     <main>
       <!--hero section  -->
       <section class="hero-section section">
-      
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-srv">Order Service</button>
-        
+        <h1 class="main-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="order-srv">Order Service</button>
       </section>
       <!-- section 1 -->
       <section class="section">
-        <div class="container">
-          <h2 hidden class="title-section">Features</h2>
-          <ul class="list">
-            <li>
-              
-              <h3 class="title-hthree">Strategy</h3>
-              <p class="text-dscr">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li>
-              <h3 class="title-hthree">Punctuality</h3>
-              <p class="text-dscr">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li>
-              <h3 class="title-hthree">Diligence</h3>
-              <p class="text-dscr">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li>
-              <h3 class="title-hthree">Technologies</h3>
-              <p class="text-dscr">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section class="section">
+        <h2 hidden class="title-section">Features</h2>
+        <ul class="list container-list">
+          <li>
+            <h3 class="title-hthree">Strategy</h3>
+            <p class="text-dscr">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <h3 class="title-hthree">Punctuality</h3>
+            <p class="text-dscr">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <h3 class="title-hthree">Diligence</h3>
+            <p class="text-dscr">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <h3 class="title-hthree">Technologies</h3>
+            <p class="text-dscr">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
+      </section>
       <!-- section  2-->
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="title-section">What are we doing</h2>
-          <ul class="list">
+          <ul class="list product">
             <li>
               <img
                 src="./images/studio/section2/img1.jpg"
@@ -134,8 +127,8 @@
       <!-- section  3-->
       <section class="our-team section">
         <div class="container">
-          <h2 class="title-section">Our Team</h2>
-          <ul class="list">
+          <h2 class="title-section-team">Our Team</h2>
+          <ul class="list product">
             <li class="section-img">
               <img
                 src="./images/studio/section3/img1.jpg"
@@ -143,8 +136,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="title-hthree">Mark Guerrero</h3>
-              <p class="text-dscr">Product Designer</p>
+              <div class="team-dscr">
+                <h3 class="title-hthree dscr">Mark Guerrero</h3>
+                <p class="text-dscr">Product Designer</p>
+              </div>
             </li>
             <li class="section-img">
               <img
@@ -153,8 +148,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="title-hthree">Tom Ford</h3>
-              <p class="text-dscr">Frontend Developer</p>
+              <div class="team-dscr">
+                <h3 class="title-hthree dscr">Tom Ford</h3>
+                <p class="text-dscr">Frontend Developer</p>
+              </div>
             </li>
             <li class="section-img">
               <img
@@ -163,8 +160,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="title-hthree">Camila Garcia</h3>
-              <p class="text-dscr">Marketing</p>
+              <div class="team-dscr">
+                <h3 class="title-hthree dscr">Camila Garcia</h3>
+                <p class="text-dscr">Marketing</p>
+              </div>
             </li>
             <li class="section-img">
               <img
@@ -173,17 +172,19 @@
                 width="264"
                 height="260"
               />
-              <h3 class="title-hthree">Daniel Wilson</h3>
-              <p class="text-dscr">UI Designer</p>
+              <div class="team-dscr">
+                <h3 class="title-hthree dscr">Daniel Wilson</h3>
+                <p class="text-dscr">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- footer section -->
-    <footer class="footer section">
-      <div class="container">
-        <a class="link logo" href="./index.html"
+    <footer class="footer">
+      <div class="container footer-item">
+        <a class="link logo footer-logo" href="./index.html"
           >Web<span class="link logo-light">Studio</span></a
         >
         <p class="footer-text">
