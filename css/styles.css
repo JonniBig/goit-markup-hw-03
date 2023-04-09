@@ -27,7 +27,7 @@ body {
 }
 .section {
   width: 1440px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 /* reset start */
 h1,
@@ -110,6 +110,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -143,7 +144,6 @@ img {
   display: flex;
   align-items: start;
   flex-direction: column;
-  margin-bottom: 120px;
 }
 .main-title {
   font-weight: 700;
@@ -180,6 +180,7 @@ img {
   background-color: var(--ocean);
 }
 /* section 1 */
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
@@ -197,8 +198,7 @@ img {
 .container-list {
   display: flex;
   width: 1128px;
-  margin: 0 auto;
-  padding: 0 15px;
+
   gap: 24px;
 }
 
@@ -208,7 +208,7 @@ img {
   line-height: 1.2;
   color: var(--navy-blue);
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .text-dscr {
@@ -224,6 +224,10 @@ img {
   display: flex;
   gap: 24px;
 }
+.product-item {
+  width: calc((100% - 48px) / 3);
+}
+
 /* section  3 */
 .our-team {
   background-color: var(--cloud);
@@ -326,14 +330,16 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--cloud);
+  padding-bottom: 100px;
 }
 
 .footer {
   background-color: var(--navy-blue);
-  height: 312px;
+
   width: 1440px;
 }
 .footer-logo {
+  display: inline-block;
   padding-top: 100px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
