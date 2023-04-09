@@ -140,7 +140,7 @@ img {
 /* hero section */
 .hero-section {
   background-color: var(--navy-blue);
-  padding: 188px auto;
+  padding: 188px 0;
 }
 .main-title {
   font-weight: 700;
@@ -150,7 +150,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--white);
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
+
 .order-srv {
   font-family: inherit;
   font-weight: 500;
@@ -273,8 +277,6 @@ img {
   letter-spacing: 0.04em;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  width: 116px;
-  height: 48px;
   padding: 12px 24px;
 }
 .filter-btn:focus,
