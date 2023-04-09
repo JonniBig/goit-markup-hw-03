@@ -18,6 +18,7 @@ body {
   color: var(--slate);
   background-color: var(--white);
   letter-spacing: 0.02em;
+  width: 1440px;
 }
 .container {
   width: 1158px;
@@ -38,6 +39,18 @@ h6,
 p,
 ul {
   margin: 0;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .link {
   color: currentColor;
@@ -85,7 +98,7 @@ button {
 .header-item {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
 }
 .header-link {
   font-weight: 500;
@@ -172,10 +185,15 @@ button {
   color: var(--navy-blue);
   margin-bottom: 72px;
 }
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 .container-list {
   display: flex;
   width: 1128px;
   margin: 0 auto;
+  padding: 0 15px;
   gap: 24px;
 }
 
@@ -244,11 +262,35 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  width: 116px;
+  height: 48px;
 }
 .filter-btn:focus,
 .filter-btn:hover {
   background-color: var(--ocean);
   color: #ffffff;
+}
+.container.portfolio {
+  margin-left: auto;
+  margin-right: auto;
+}
+.list.container-list {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.container-list-button {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  width: calc((100% - 48px) / 3);
 }
 /*---------- footer--------- */
 .container.footer-item {
