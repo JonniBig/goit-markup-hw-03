@@ -28,7 +28,7 @@ body {
 .section {
   padding: 120px 0;
 }
-/* reset start */
+/* reset -----start */
 h1,
 h2,
 h3,
@@ -72,9 +72,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* reset end */
+/* reset----- end */
 
-/* logo */
+/* -----logo----- */
 
 .logo-light {
   color: var(--cloud);
@@ -93,7 +93,14 @@ img {
 .logo-dark {
   color: var(--navy-blue);
 }
-/* header */
+.header-item .logo {
+  margin-right: 76px;
+}
+.footer-logo {
+  margin-bottom: 16px;
+}
+/* -----logo----- */
+/* -----header----- */
 .header {
   border-bottom: 1px solid var(--cornflower);
 }
@@ -133,7 +140,7 @@ img {
 }
 
 /* ------------main studio-------------*/
-/* hero section */
+/* -----hero section----- */
 .hero-section {
   background-color: var(--navy-blue);
   padding: 188px 0;
@@ -173,7 +180,7 @@ img {
 .order-srv:focus {
   background-color: var(--ocean);
 }
-/* section 1 */
+/* -----section----- 1 */
 
 .title-section {
   font-weight: 700;
@@ -212,7 +219,10 @@ img {
   color: var(--slate);
 }
 
-/* section  2 */
+/* -----section-----  2 */
+.section-wawd {
+  padding-bottom: 120px;
+}
 
 .list.product {
   display: flex;
@@ -222,7 +232,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-/* section  3 */
+/* -----section-----  3 */
 .our-team {
   background-color: var(--cloud);
 }
@@ -255,7 +265,7 @@ img {
   text-align: center;
 }
 
-/* main portfolio */
+/* -----main portfolio----- */
 .portfolio-section {
   padding: 96px 0 120px;
 }
@@ -326,7 +336,4 @@ img {
 .footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
-}
-.footer-logo {
-  margin-bottom: 16px;
 }
